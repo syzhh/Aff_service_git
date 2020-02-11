@@ -21,7 +21,8 @@ test_case:
     UserId: '58988'
   file: false
   check:
-    check_type: json
+    #expected_request only_check_status result_GetUserRecord.json
+    check_type: Regular_check
     expected_code: 200
-    expected_request: result_GetUserRecord.json
+    expected_request: '"ErrorCode": 200'
   relevance:
