@@ -11,18 +11,18 @@ from bin.unit.initializeCase import ini_case
 from bin.unit.initializePremise import ini_request
 from bin.unit.apiSendCheck import api_send_check
 
-PATH = setupMain.PATH + "/aff/pages/offer"
+PATH = setupMain.PATH + "/aff/pages/blogpost"
 
-case_dict = ini_case(PATH, "Template")
+case_dict = ini_case(PATH, "reco")
 
 
 @allure.feature(case_dict["test_info"]["title"])
-class TestTemplate:
+class TestReco:
 
     @pytest.mark.parametrize("case_data", case_dict["test_case"], ids=[])
-    @allure.story("Template")
+    @allure.story("reco")
     @pytest.mark.flaky(reruns=3, reruns_delay=3)
-    def test_template(self, case_data):
+    def test_reco(self, case_data):
         """
 
         :param case_data: 测试用例

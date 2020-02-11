@@ -1,0 +1,42 @@
+test_info:
+  id: test_Get_01
+  title: Setting
+  host: 192.168.3.88:5555
+  address: /api/v1/Setting/Get
+premise:
+test_case:
+- test_name: Get
+  info: Get
+  http_type: http
+  request_type: GET
+  parameter_type:
+  address: /api/v1/Setting/Get
+  headers:
+    X-Requested-With: XMLHttpRequest
+  cookies: false
+  timeout: 20
+  parameter: {}
+  file: false
+  check:
+    check_type: json
+    expected_code: 200
+    expected_request:
+      Data:
+      - Name: UserHistoryRecord
+        Key: :User:Record:{0}:{1}:{2}
+        TTL: 2592000
+        MaxCount: 100
+        Son: []
+      - Name: BrowseHistoryRecord
+        Key: :Browse:Record:{0}:{1}:{2}
+        TTL: 7776000
+        MaxCount: -1
+        Son: []
+      - Name: UnreadHistoryRecord
+        Key: :Unread:Record:{0}:{1}:{2}
+        TTL: 7776000
+        MaxCount: -1
+        Son: []
+      ErrorCode: 200
+      ErrorMsg: "\u6210\u529F\u54CD\u5E94"
+  relevance:

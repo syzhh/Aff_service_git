@@ -1,0 +1,24 @@
+test_info:
+  id: test_reco_01
+  title: blogpost
+  host: ${host}$
+  address: /api/v2/recomm/blogpost/reco
+premise:
+test_case:
+  test_name: reco
+  info: reco
+  http_type: https
+  request_type: POST
+  parameter_type: application/json
+  address: /api/v2/recomm/blogpost/reco
+  headers:
+    X-Requested-With: XMLHttpRequest
+  cookies: False
+  timeout: 20
+  parameter: {}
+  file: false
+  check:
+    check_type: json
+    expected_code: 200
+    expected_request: result_reco.json
+  relevance:

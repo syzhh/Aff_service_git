@@ -27,13 +27,13 @@ def write_case(_path):
             pass
         else:
             shutil.copyfile(src, new_case)
-            with open(new_case, 'r') as fw:
+            with open(new_case, 'r', encoding='utf-8') as fw:
                 source = fw.readlines()
             n = 0
-            with open(new_case, 'w') as f:
+            with open(new_case, 'w', encoding='utf-8') as f:
                 for line in source:
                     if 'PATH = setupMain.PATH' in line:
-                        line = line.replace("/aff/page/offer", "/aff/page/%s" % yml_path)
+                        line = line.replace("/aff/pages/offer", "/aff/pages/%s" % yml_path)
                         f.write(line)
                         n = n+1
                     elif 'case_dict = ini_case' in line:

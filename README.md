@@ -15,4 +15,6 @@
 
 ----
 
+allure generate 'D:\sln\github\Aff_service_git\aff\report\xml' -o 'D:\sln\github\Aff_service_git\aff\report\html' --clean
+
 详细介绍见原文:https://www.jianshu.com/p/6f5bfc1182ae

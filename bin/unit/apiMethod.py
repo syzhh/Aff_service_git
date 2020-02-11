@@ -38,6 +38,10 @@ def post(header, address, request_parameter_type, timeout=8, data=None, files=No
 
         response = requests.post(url=address, data=enc, headers=header, timeout=timeout)
     else:
+        # if request_parameter_type is not None:
+        #     header=[]
+        #     header['Content-Type'] = request_parameter_type
+        #     pass
         response = requests.post(url=address, data=data, headers=header, timeout=timeout, files=files)
     try:
         if response.status_code != 200:

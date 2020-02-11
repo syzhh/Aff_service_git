@@ -1,0 +1,27 @@
+test_info:
+  id: test_GetBrowseRecord_01
+  title: History
+  host: 192.168.3.88:5555
+  address: /api/v1/History/GetBrowseRecord
+premise:
+test_case:
+- test_name: GetBrowseRecord
+  info: GetBrowseRecord
+  http_type: http
+  request_type: GET
+  parameter_type:
+  address: /api/v1/History/GetBrowseRecord
+  headers:
+    X-Requested-With: XMLHttpRequest
+  cookies: false
+  timeout: 20
+  parameter:
+    ClassId: '0'
+    TypeId: '1'
+    MapId: '884444'
+  file: false
+  check:
+    check_type: json
+    expected_code: 200
+    expected_request: result_GetBrowseRecord.json
+  relevance:

@@ -1,0 +1,14 @@
+[
+    {
+        "test_name": "GetBrowseRecord",
+        "json": {
+            "Values": [],
+            "PageSize": 1,
+            "PageIndex": 1,
+            "RowCount": 0,
+            "PageCount": 0,
+            "ErrorCode": 200,
+            "ErrorMsg": "成功响应"
+        }
+    }
+]

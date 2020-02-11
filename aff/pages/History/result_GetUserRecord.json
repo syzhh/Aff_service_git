@@ -1,0 +1,19 @@
+[
+    {
+        "test_name": "GetUserRecord",
+        "json": {
+            "Values": [
+                {
+                    "Value": 884444,
+                    "Time": "2020-01-03 11:30:16"
+                }
+            ],
+            "PageSize": 1,
+            "PageIndex": 1,
+            "RowCount": 4,
+            "PageCount": 4,
+            "ErrorCode": 200,
+            "ErrorMsg": "成功响应"
+        }
+    }
+]

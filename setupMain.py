@@ -27,6 +27,6 @@ if __name__ == '__main__':
     write_case(har_path)
     args = ['-s', '-q', '--alluredir', xml_report_path]
     pytest.main(args)
-    cmd = 'allure generate %s -o %s' % (xml_report_path, html_report_path)
+    cmd = 'allure generate %s -o %s --clean' % (xml_report_path, html_report_path)
     invoke(cmd)
 
