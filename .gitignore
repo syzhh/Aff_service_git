@@ -1,7 +1,3 @@
-/html
-/testcase
-/pages
-/aff/report/*
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -132,3 +128,8 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+/html
+/testcase
+/pages
+/aff/report/*
+/aff/report/html/data
